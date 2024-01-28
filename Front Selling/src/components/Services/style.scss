@@ -1,0 +1,96 @@
+.services {
+  max-width: 100%;
+  min-height: 80vh;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  .containerServices {
+    max-width: 75%;
+    margin: 0px auto;
+    .header {
+      text-align: center;
+      p {
+        font-size: 13px;
+        color: #808080;
+      }
+      h1 {
+        font-size: 38px;
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 50px;
+      margin-top: 60px;
+      .card {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        .icon {
+          color: #f16821;
+          font-size: 30px;
+        }
+        .text {
+          color: gray;
+          h3 {
+            font-weight: 400;
+          }
+          a {
+            color: #f16821;
+          }
+          p {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .services {
+    max-width: 100%;
+    min-height: auto;
+    .containerServices {
+      max-width: 75%;
+      margin: 40px auto;
+      .header {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .services {
+    max-width: 100%;
+    min-height: auto;
+    .containerServices {
+      max-width: 75%;
+      margin: 40px auto;
+      .header {
+        h1 {
+          font-size: 35px;
+        }
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
+      }
+    }
+  }
+}

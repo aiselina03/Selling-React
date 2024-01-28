@@ -1,0 +1,122 @@
+.containerAbout {
+  max-width: 80%;
+  margin: 80px auto;
+  .about {
+    max-width: 100%;
+    min-height: 75vh;
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    .img {
+      width: 500px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .textAbout {
+        color: white;
+        background: #46ddb0;
+        width: 300px;
+        height: 60px;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .aboutUs {
+      p {
+        font-size: 13px;
+        color: #808080;
+        line-height: 25px;
+      }
+      h1 {
+        font-size: 38px;
+      }
+      button {
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 6px;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 10px 20px;
+        transition: all 700ms;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .containerAbout {
+    max-width: 80%;
+    margin: 80px auto;
+    .about {
+      max-width: 100%;
+      min-height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      gap: 50px;
+      .img {
+        width: 300px;
+        img {
+          width: 100%;
+        }
+      }
+      .aboutUs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+          margin: 10px 0;
+          font-size: 33px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .containerAbout {
+    max-width: 80%;
+    margin: 80px auto;
+    .about {
+      max-width: 100%;
+      min-height: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 50px;
+      .img {
+        width: 380px;
+        img {
+          width: 100%;
+        }
+      }
+      .aboutUs {
+        width: 200px;
+        h1 {
+          margin: 10px 0;
+          font-size: 33px;
+        }
+      }
+    }
+  }
+}
